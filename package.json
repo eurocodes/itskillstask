@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "build": "rm -rf dist && backend -d dist && cd frontend && npm install && npm run build",
+    "build": "rm -rf dist && cd frontend && npm install && npm run build",
     "heroku-postbuild-x": "npm run build && cd frontend && npm install && npm run build"
   },
   "repository": {
