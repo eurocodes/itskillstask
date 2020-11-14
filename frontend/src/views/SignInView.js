@@ -6,7 +6,7 @@ import { UserContext } from '../userContext'
 export const SignInView = (props) => {
 
     const history = useHistory()
-    const { userData, setUserData } = useContext(UserContext);
+    const { setUserData } = useContext(UserContext);
 
     const [data, setData] = useState({
         email: "",

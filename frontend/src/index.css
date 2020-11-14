@@ -24,26 +24,44 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: #282c34;
+  background-color: #797373;
   background-size: cover;
   filter: blur(10px);
-  opacity: 0.5;
   z-index: 1;
 }
 
-.form-contaner {
-  position: absolute;
-  top: 50%;
-  right: 0;
-  left: 0;
-  width: 36vw;
-  padding: 10px;
-  margin: 0 auto;
-  background-color: #fff;
-  z-index: 2;
-  transform: translateY(-50%);
-  box-shadow: 0 10px 20px -5px #ccc;
-  border-radius: 10px;
+@media screen and (min-width: 768px) {
+  .form-contaner {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 0;
+    width: 50vw;
+    padding: 10px;
+    margin: 0 auto;
+    background-color: #fff;
+    z-index: 2;
+    transform: translateY(-50%);
+    box-shadow: 0 10px 20px -5px #ccc;
+    border-radius: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .form-contaner {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 0;
+    width: 95vw;
+    margin: 10px;
+    margin: 0 auto;
+    background-color: #fff;
+    z-index: 2;
+    transform: translateY(-50%);
+    box-shadow: 0 10px 20px -5px #ccc;
+    border-radius: 10px;
+  }
 }
 
 .box-controller {
@@ -144,10 +162,13 @@ body {
   font-size: 1rem;
   font-weight: 600;
   padding: 5px;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .social .fa {
-  margin-right: 8px;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .facebook {
@@ -157,4 +178,34 @@ body {
 
 .fa-twitter {
   color: #8bc4fc;
+}
+
+@media screen and (max-width: 768px) {
+  .social-login {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 80vw;
+  }
+  
+  .social-login button {
+    display: block;
+    width: 48%;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 5px;
+  }
+  
+  .social .fa {
+    margin-right: 8px;
+  }
+  
+  .facebook {
+    background-color: #304281;
+    color: #fff;
+  }
+  
+  .fa-twitter {
+    color: #8bc4fc;
+  }
 }
